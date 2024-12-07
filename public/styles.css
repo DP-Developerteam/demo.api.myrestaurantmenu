@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    /* padding: 20px; */
+    font-family: monospace;
+    background-color: #000000;
+    color: #ffffff;
+}
+section {
+    text-align: start;
+    padding: 40px;
+    border-radius: 18px;
+    background-color: #111111;
+    max-width: 300px;
+}
+a {
+    color: #0fffff;
+}
+a:hover {
+    cursor: pointer;
+}
