@@ -9,7 +9,7 @@ const authorize = require("../utils/middlewares/auth.middleware");
 
 
 // GET ALL - Products
-router.get('/', authorize, async (req, res, next) => {
+router.get('/', async (req, res, next) => {
     try {
         // Fetch all products from the database
         const products = await productSchema.find();

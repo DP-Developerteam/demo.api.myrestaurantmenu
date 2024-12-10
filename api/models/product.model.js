@@ -46,7 +46,7 @@ let productSchema = new Schema({
         type: Boolean,
         required: true
     },
-    dateAdded: {
+    dateCreation: {
         // Automatically store the date when the product is added to the menu
         type: Date,
         default: Date.now // Automatically set to the current date
