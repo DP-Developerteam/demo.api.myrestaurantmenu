@@ -19,7 +19,7 @@ const products = [
         description: "Whole-grain toast with avocado, cherry tomatoes, and a drizzle of olive oil.",
         category: "breakfast",
         ingredients: ["Whole-grain bread", "Avocado", "Cherry tomatoes", "Olive oil", "Salt"],
-        image: "add image later",
+        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
         video: "add video later",
         vegetarian: true,
     },

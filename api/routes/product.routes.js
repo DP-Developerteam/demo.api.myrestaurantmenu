@@ -11,10 +11,43 @@ const authorize = require("../utils/middlewares/auth.middleware");
 // GET ALL - Products
 router.get('/', async (req, res, next) => {
     try {
-        // Fetch all products from the database
+        // // Retrieve the query parameter
+        const lastUpdated = req.query.lastUpdated;
+
+        // Get the most recent 'lastUpdated' value or use a fallback
+        const lastUpdatedObject = await productSchema.findOne().sort({ lastUpdated: -1 }).select('lastUpdated');
+
+        // Fetch all products
         const products = await productSchema.find();
-        // Return the fetched products as JSON
-        res.status(200).json(products);
+
+        // Parse the query parameter into a Date object
+        const lastUpdatedDate = lastUpdated ? new Date(lastUpdated) : null;
+        // Check if the query parameter is valid
+        if (isNaN(lastUpdatedDate)) {
+            console.log("Invalid date format received:", lastUpdated);
+            return res.status(200).json({
+                lastUpdated: lastUpdatedObject.lastUpdated,
+                products: products
+            });
+        }
+
+        // Compare the query parameter with the most recent 'lastUpdated' value
+        if (lastUpdatedDate && lastUpdatedDate.getTime() === lastUpdatedObject.lastUpdated.getTime()) {
+            console.log("Dates are equal. No updates needed.");
+            return res.status(200).json({
+                lastUpdated: lastUpdatedObject.lastUpdated,
+            });
+        }
+
+        // If dates are not equal or no query parameter is provided, fetch all products
+        console.log("Dates are different or no parameter provided. Returning all products.");
+
+        // Return the fetched products and the last updated timestamp
+        return res.status(200).json({
+            lastUpdated: lastUpdatedObject.lastUpdated,
+            products: products
+        });
+
     } catch (error) {
         // Forward any errors to the global error handler
         next(error);

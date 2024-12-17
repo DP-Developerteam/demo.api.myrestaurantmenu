@@ -52,6 +52,8 @@ let productSchema = new Schema({
         default: Date.now // Automatically set to the current date
     }
 }, {
+    // Automatically add and update 'lastUpdated' field
+    timestamps: { updatedAt: 'lastUpdated' },
     // Name of the collection in MongoDB where these documents will be stored
     collection: 'products'
 });
