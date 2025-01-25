@@ -7,49 +7,56 @@ const Schema = mongoose.Schema;
 // Define the schema for products (structure of product documents)
 let productSchema = new Schema({
     name: {
-        // The name of the product (e.g., "Margherita Pizza")
-        type: String,
-        required: true
+        // Allow both String and Object types for localized content
+        type: mongoose.Schema.Types.Mixed,
+        required: true,
+        validate: {
+            validator: function (value) {
+                // Validate that the value is either a string or an object
+                return typeof value === 'string' || (typeof value === 'object' && value !== null && !Array.isArray(value));
+            },
+            message: 'Name must be either a string or an object for localized content.'
+        }
     },
     price: {
-        // The price of the product
         type: Number,
         required: true
     },
     description: {
-        // A brief description of the product (e.g., ingredients, details)
-        type: String,
-        required: false
+        // Allow both String and Object types for localized content
+        type: mongoose.Schema.Types.Mixed,
+        required: false,
+        validate: {
+            validator: function (value) {
+                // Validate that the value is either a string or an object
+                return typeof value === 'string' || (typeof value === 'object' && value !== null && !Array.isArray(value));
+            },
+            message: 'Description must be either a string or an object for localized content.'
+        }
     },
     category: {
-        // The category to which the product belongs (e.g., Pizza, Drinks)
         type: String,
         required: true
     },
     ingredients: {
-        // An array of ingredients for the product (e.g., ["Cheese", "Tomato"])
         type: [String],
         required: false
     },
     image: {
-        // A URL pointing to an image of the product
         type: String,
         required: false
     },
     video: {
-        // A URL pointing to a video showcasing the product
         type: String,
         required: false
     },
     vegetarian: {
-        // Boolean flag to indicate if the product is vegetarian
         type: Boolean,
         required: true
     },
     dateCreation: {
-        // Automatically store the date when the product is added to the menu
         type: Date,
-        default: Date.now // Automatically set to the current date
+        default: Date.now
     }
 }, {
     // Automatically add and update 'lastUpdated' field
