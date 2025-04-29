@@ -98,12 +98,16 @@ router.post('/logout', (req, res) => {
       }
       // Clear session cookie with secure settings
       res.clearCookie('connect.sid', {
+        // path: '/',
+        // domain: process.env.NODE_ENV === 'production' ? process.env.API_BASE_URL : 'localhost',
+        // httpOnly: true, // Prevent client-side JS access
+        // secure: process.env.NODE_ENV === 'production', // HTTPS only in production
+        // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax', // CSRF protection
         path: '/',
-        domain: process.env.NODE_ENV === 'production' ? process.env.API_BASE_URL : 'localhost',
-        httpOnly: true, // Prevent client-side JS access
-        secure: process.env.NODE_ENV === 'production', // HTTPS only in production
-        // sameSite: 'lax'
-        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax', // CSRF protection
+        secure: true, // Set false for local test
+        sameSite: 'none',
+        domain: '.vercel.app',
+        httpOnly: true, // Prevent client-side JS cookie access
       });
       // Return success response
       res.status(200).json({

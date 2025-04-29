@@ -72,13 +72,13 @@ app.use(session({
     resave: false, // Don't save session if unmodified
     saveUninitialized: false, // Don't create session until something stored
     cookie: {
+        path: '/',
         secure: true, // Set false for local test
         // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         sameSite: 'none',
         domain: '.vercel.app',
         httpOnly: true, // Prevent client-side JS cookie access
-        maxAge: 4 * 60 * 60 * 1000, // 4 hour session duration
-        path: '/'
+        maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },
     // MongoDB session store
     store: require('connect-mongo').create({
