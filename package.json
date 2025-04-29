@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
     "loadProducts": "node ./api/seeds/seedProducts.js",
     "loadUsers": "node ./api/seeds/seedUsers.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,13 +15,22 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "connect-mongo": "^5.1.0",
     "cors": "^2.8.5",
+    "csrf": "^3.1.0",
+    "csurf": "^1.10.0",
     "express": "^4.21.1",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
     "express-validator": "^7.2.0",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.7.1"
+    "mongoose": "^8.7.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.7"
   }

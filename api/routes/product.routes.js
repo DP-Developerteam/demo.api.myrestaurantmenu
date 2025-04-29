@@ -24,7 +24,6 @@ router.get('/', async (req, res, next) => {
         const lastUpdatedDate = lastUpdated ? new Date(lastUpdated) : null;
         // Check if the query parameter is valid
         if (isNaN(lastUpdatedDate)) {
-            console.log("Invalid date format received:", lastUpdated);
             return res.status(200).json({
                 lastUpdated: lastUpdatedObject.lastUpdated,
                 products: products
@@ -33,14 +32,10 @@ router.get('/', async (req, res, next) => {
 
         // Compare the query parameter with the most recent 'lastUpdated' value
         if (lastUpdatedDate && lastUpdatedDate.getTime() === lastUpdatedObject.lastUpdated.getTime()) {
-            console.log("Dates are equal. No updates needed.");
             return res.status(200).json({
                 lastUpdated: lastUpdatedObject.lastUpdated,
             });
         }
-
-        // If dates are not equal or no query parameter is provided, fetch all products
-        console.log("Dates are different or no parameter provided. Returning all products.");
 
         // Return the fetched products and the last updated timestamp
         return res.status(200).json({

@@ -4,37 +4,59 @@ const jwt = require("jsonwebtoken");
 // Middleware function to verify JWT and attach user info to the request object
 module.exports = (req, res, next) => {
     try {
-        // Extract the token from the Authorization header (format: "Bearer token")
+        if (process.env.NODE_ENV === 'development') {
+            console.log('AUTH.MIDDLEWARE.JS - Verify JWT middleware start')
+        }
+        // Check if the token has been provided
         const token = req.headers.authorization?.split(" ")[1];
-
-        // If no token is provided, respond with a 401 Unauthorized status
-        if (!token) {
-            return res.status(401).json({ message: "No token provided" });
+        // Check authorized session authorized
+        const sessionAuth = req.isAuthenticated();
+        // Check for JWT-based auth
+        if (token) {
+            if (process.env.NODE_ENV === 'development') {
+                console.log('AUTH.MIDDLEWARE.JS - JWT auth')
+            }
+            // Check if the token has expired
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
+            // Attach user info
+            req.user = {
+                userId: decoded.userId,
+                email: decoded.email,
+                role: decoded.role,
+            };
+            return next();
+        } else if (sessionAuth) { // Check for session-based auth (Google OAuth)
+            if (process.env.NODE_ENV === 'development') {
+                console.log('AUTH.MIDDLEWARE.JS - Session auth')
+            }
+            // Attach user info
+            req.user = {
+                userId: req.user._id,
+                email: req.user.email,
+                role: req.user.role
+            };
+            return next();
+        } else {
+            // If no token is provided, respond with a 401 Unauthorized status
+            return res.status(401).json({
+                message: "No token/session provided",
+                code: "UNAUTHORIZED"
+            });
         }
 
-        // Retrieve the secret key from environment variables for token verification
-        const secretKey = process.env.JWT_SECRET;
-
-        // Verify the token using the secret key; this will decode the token if valid
-        const decoded = jwt.verify(token, secretKey);
-
-        // Check if the token has expired by comparing the expiration time to the current time
-        const currentTime = Math.floor(Date.now() / 1000); // current time in seconds
-        if (decoded.exp && decoded.exp < currentTime) {
-            return res.status(401).json({ message: "Token has expired" });
-        }
-
-        // Attach user info (userId, username, role) to the request object for further use
-        req.user = {
-            userId: decoded.userId,
-            username: decoded.username,
-            role: decoded.role, // Include the user's role from the decoded token
-        };
-
-        // Call the next middleware in the stack
-        next();
     } catch (error) {
-        // If token verification fails, respond with a 401 Unauthorized status
-        res.status(401).json({ message: "Invalid token provided" });
+        if (error.name === "TokenExpiredError") {
+            // If token expired
+            res.status(401).json({
+                message: "Token expired",
+                code: "TOKEN_EXPIRED"
+            });
+        } else {
+            // If token verification fails
+            res.status(401).json({
+                message: "Invalid token/session",
+                code: "INVALID_TOKEN"
+            });
+        }
     }
 };
