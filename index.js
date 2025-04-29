@@ -72,11 +72,13 @@ app.use(session({
     resave: false, // Don't save session if unmodified
     saveUninitialized: false, // Don't create session until something stored
     cookie: {
-        secure: process.env.NODE_ENV === 'production', // HTTPS only in production
-        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
-        domain: process.env.FRONT_BASE_URL,
+        secure: true, // Set false for local test
+        // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        sameSite: 'none',
+        domain: '.dp-app-restaurant-menu-demo.vercel.app',
         httpOnly: true, // Prevent client-side JS cookie access
-        maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
+        maxAge: 4 * 60 * 60 * 1000, // 4 hour session duration
+        path: '/'
     },
     // MongoDB session store
     store: require('connect-mongo').create({
