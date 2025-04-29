@@ -53,6 +53,7 @@ app.use(cors({
     origin: (origin, callback) => {
         const allowedOrigins = [
             process.env.FRONT_CMS_URL,
+            process.env.FRONT_BASE_URL,
             // 'http://localhost:3000'
         ];
         // Allow requests with no origin (like mobile apps or curl requests)
@@ -73,6 +74,7 @@ app.use(session({
     cookie: {
         secure: process.env.NODE_ENV === 'production', // HTTPS only in production
         sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        domain: process.env.FRONT_BASE_URL,
         httpOnly: true, // Prevent client-side JS cookie access
         maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },
