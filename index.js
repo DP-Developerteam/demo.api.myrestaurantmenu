@@ -61,7 +61,10 @@ app.use(cors({
             callback(new Error('Not allowed by CORS'));
         }
     },
-    credentials: true // Allow credentials (cookies, authorization headers)
+    credentials: true, // Allow credentials (cookies, authorization headers)
+    exposedHeaders: [
+        'Authorization', 'Set-Cookie'
+    ]
 }));
 
 // Session configuration
@@ -72,9 +75,7 @@ app.use(session({
     cookie: {
         path: '/',
         secure: true, // Set false for local test
-        // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         sameSite: 'none',
-        // domain: 'dp-app-restaurant-menu-demo.vercel.app',
         httpOnly: true, // Prevent client-side JS cookie access
         maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },
