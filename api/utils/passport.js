@@ -14,7 +14,9 @@ passport.use(new GoogleStrategy({
         // Callback URL for Google to redirect after authentication
         callbackURL: process.env.GOOGLE_CALLBACK_URL,
         // Allow proxy to be used (important for production with HTTPS)
-        proxy: true
+        proxy: true,
+        // FIXING OAUTH
+        passReqToCallback: true
     },
     // Async callback function that handles user authentication
     async (accessToken, refreshToken, profile, done) => {

@@ -74,7 +74,7 @@ app.use(session({
         secure: true, // Set false for local test
         // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         sameSite: 'none',
-        domain: 'restaurant-menu-demo.vercel.app',
+        domain: 'dp-app-restaurant-menu-demo.vercel.app',
         httpOnly: true, // Prevent client-side JS cookie access
         maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },
