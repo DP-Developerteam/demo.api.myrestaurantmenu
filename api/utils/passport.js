@@ -15,8 +15,8 @@ passport.use(new GoogleStrategy({
         callbackURL: process.env.GOOGLE_CALLBACK_URL,
         // Allow proxy to be used (important for production with HTTPS)
         proxy: true,
-        // FIXING OAUTH
-        passReqToCallback: true
+        // // FIXING OAUTH
+        // passReqToCallback: true
     },
     // Async callback function that handles user authentication
     async (accessToken, refreshToken, profile, done) => {
