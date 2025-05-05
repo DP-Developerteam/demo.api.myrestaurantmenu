@@ -27,7 +27,7 @@ if (!process.env.SESSION_SECRET || !process.env.MONGO_DB) {
 }
 
 // Proxy configuration
-app.set('trust proxy', 1);
+app.set('trust proxy', 2);
 
 // Security middleware
 // Rate limiting configuration for authentication endpoints
@@ -63,16 +63,6 @@ app.use(cors({
     },
     credentials: true // Allow credentials (cookies, authorization headers)
 }));
-
-// FIXING OAUTH:
-app.use((req, res, next) => {
-    // Force HTTPS and correct domain for cookies
-    if (process.env.NODE_ENV === 'production') {
-      req.headers.origin = `https://${req.headers.host}`;
-      req.headers.referer = `https://${req.headers.host}`;
-    }
-    next();
-  });
 
 // Session configuration
 app.use(session({
