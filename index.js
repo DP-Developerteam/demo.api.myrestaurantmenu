@@ -61,10 +61,7 @@ app.use(cors({
             callback(new Error('Not allowed by CORS'));
         }
     },
-    credentials: true, // Allow credentials (cookies, authorization headers)
-    // exposedHeaders: [
-    //     'Authorization', 'Set-Cookie'
-    // ]
+    credentials: true // Allow credentials (cookies, authorization headers)
 }));
 
 // Session configuration
