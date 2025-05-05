@@ -26,7 +26,6 @@ if (!process.env.SESSION_SECRET || !process.env.MONGO_DB) {
     throw new Error('Missing critical environment variables');
 }
 
-
 // Proxy configuration
 app.set('trust proxy', 1);
 
@@ -53,8 +52,7 @@ app.use(cors({
     origin: (origin, callback) => {
         const allowedOrigins = [
             process.env.FRONT_CMS_URL,
-            process.env.FRONT_BASE_URL,
-            // 'http://localhost:3000'
+            process.env.FRONT_BASE_URL
         ];
         // Allow requests with no origin (like mobile apps or curl requests)
         if (!origin || allowedOrigins.includes(origin)) {
@@ -86,7 +84,7 @@ app.use(session({
         secure: true, // Set false for local test
         // sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         sameSite: 'none',
-        domain: '.vercel.app',
+        domain: 'restaurant-menu-demo.vercel.app',
         httpOnly: true, // Prevent client-side JS cookie access
         maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },

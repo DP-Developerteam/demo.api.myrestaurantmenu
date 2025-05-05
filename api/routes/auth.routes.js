@@ -50,7 +50,7 @@ router.get('/user', (req, res) => {
     console.log('AUTH.ROUTES.JS - /user start')
   }
   // Check authentication status
-  if (!req.isAuthenticated) return res.status(401).json({ error: 'Not authenticated' });
+  if (!req.isAuthenticated()) return res.status(401).json({ error: 'Not authenticated' });
   // Initialize session if doesn't exist
   if (!req.session) req.session = {};
   // Generate CSRF secret if missing
