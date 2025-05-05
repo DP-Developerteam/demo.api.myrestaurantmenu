@@ -62,9 +62,9 @@ app.use(cors({
         }
     },
     credentials: true, // Allow credentials (cookies, authorization headers)
-    exposedHeaders: [
-        'Authorization', 'Set-Cookie'
-    ]
+    // exposedHeaders: [
+    //     'Authorization', 'Set-Cookie'
+    // ]
 }));
 
 // Session configuration
