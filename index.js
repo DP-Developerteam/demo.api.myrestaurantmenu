@@ -72,7 +72,8 @@ app.use(session({
     cookie: {
         path: '/',
         secure: true, // Set false for local test
-        sameSite: 'none',
+        sameSite: "lax",
+        domain: ".myrestaurantmenu.com",
         httpOnly: true, // Prevent client-side JS cookie access
         maxAge: 4 * 60 * 60 * 1000 // 4 hour session duration
     },
