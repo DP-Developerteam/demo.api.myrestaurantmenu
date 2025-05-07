@@ -8,11 +8,11 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 // Import User model for interacting with the MongoDB users collection
-const userSchema = require("../models/user.model");
+const userSchema = require("../models/user.model.js");
 // Import authorization middleware to protect routes
 const authorize = require("../utils/middlewares/auth.middleware.js");
 // Import role groups to authorie routes
-const { groupAdmin, groupEditors, groupClients } = require('../utils/middlewares/role.middleware');
+const { groupAdmin, groupEditors, groupClients } = require('../utils/middlewares/role.middleware.js');
 
 // Import express-validator for validating request data
 const { check, validationResult } = require('express-validator');
