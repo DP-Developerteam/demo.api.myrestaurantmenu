@@ -6,6 +6,8 @@ const router = express.Router();
 const productSchema = require(`../models/product.model`);
 // Import authorization middleware to protect routes
 const authorize = require("../utils/middlewares/auth.middleware");
+// Import role groups to authorie routes
+const { groupAdmin, groupEditors, groupClients } = require('../utils/middlewares/role.middleware.js');
 
 
 // GET ALL - Products
@@ -113,7 +115,7 @@ router.post('/create', authorize, async (req, res, next) => {
 });
 
 // UPDATE Product by ID
-router.put('/edit/:id', authorize, async (req, res, next) => {
+router.put('/edit/:id', authorize, groupEditors, async (req, res, next) => {
     try {
         // Update Product details
         const updatedProduct = await productSchema.findByIdAndUpdate(req.params.id, { $set: req.body }, { new: true });
