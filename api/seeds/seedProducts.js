@@ -27,7 +27,7 @@ const products = [
         },
         category: "breakfast",
         ingredients: ["Whole-grain bread", "Avocado", "Cherry tomatoes", "Olive oil", "Salt"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-avocado-toast.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -45,7 +45,7 @@ const products = [
         },
         category: "breakfast",
         ingredients: ["Bacon", "Eggs", "Toast", "Butter"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-bacon-and-egg-platter.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -63,7 +63,7 @@ const products = [
         },
         category: "breakfast",
         ingredients: ["Eggs", "Mushrooms", "Spinach", "Cheese"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-vegetable-omelette.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -81,7 +81,7 @@ const products = [
         },
         category: "breakfast",
         ingredients: ["Flour", "Eggs", "Milk", "Honey", "Fresh fruits"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-pancakes-with-honey.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -99,7 +99,7 @@ const products = [
         },
         category: "breakfast",
         ingredients: ["Yogurt", "Granola", "Seasonal fruits"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-yogurt-with-granola.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -117,7 +117,7 @@ const products = [
         },
         category: "brunch",
         ingredients: ["Eggs", "English muffin", "Ham", "Hollandaise sauce"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-eggs-benedict.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -135,7 +135,7 @@ const products = [
         },
         category: "brunch",
         ingredients: ["Avocado", "Feta cheese", "Cherry tomatoes", "Arugula", "Olive oil"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-avocado-and-feta-salad.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -153,7 +153,7 @@ const products = [
         },
         category: "brunch",
         ingredients: ["Chicken", "Waffles", "Maple syrup", "Butter"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-chicken-and-waffles.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -171,7 +171,7 @@ const products = [
         },
         category: "brunch",
         ingredients: ["Spinach", "Goat cheese", "Eggs", "Cream", "Pie crust"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-spinach-and-goat-cheese-quiche.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -189,7 +189,7 @@ const products = [
         },
         category: "brunch",
         ingredients: ["Sourdough bread", "Shrimp", "Avocado", "Chili flakes", "Lemon juice"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-shrimp-avocado-toast.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -207,7 +207,7 @@ const products = [
         },
         category: "dinner",
         ingredients: ["Salmon", "Lemon", "Butter", "Garlic", "Parsley"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-grilled-salmon.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -225,7 +225,7 @@ const products = [
         },
         category: "dinner",
         ingredients: ["Eggplant", "Marinara sauce", "Mozzarella", "Parmesan cheese", "Breadcrumbs"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-eggplant-parmesan.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -243,7 +243,7 @@ const products = [
         },
         category: "dinner",
         ingredients: ["Steak", "Potatoes", "Garlic", "Butter", "Vegetables"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-steak-with-garlic-mashed-potatoes.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -261,7 +261,7 @@ const products = [
         },
         category: "dinner",
         ingredients: ["Bell peppers", "Quinoa", "Black beans", "Vegetables", "Cheese"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-vegetarian-stuffed-peppers.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -279,7 +279,7 @@ const products = [
         },
         category: "dinner",
         ingredients: ["Spaghetti", "Shrimp", "Garlic", "Butter", "Parmesan cheese"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-garlic-butter-shrimp-pasta.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -387,7 +387,7 @@ const products = [
         },
         category: "snack",
         ingredients: ["Tortilla chips", "Cheddar cheese", "Jalapeños", "Salsa", "Sour cream"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-loaded-nachos.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -405,7 +405,7 @@ const products = [
         },
         category: "snack",
         ingredients: ["Chicken wings", "Buffalo sauce", "BBQ sauce", "Honey mustard"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-chicken-wings.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -423,7 +423,7 @@ const products = [
         },
         category: "snack",
         ingredients: ["Cherry tomatoes", "Mozzarella", "Basil", "Balsamic glaze"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-caprese-skewers.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -441,7 +441,7 @@ const products = [
         },
         category: "snack",
         ingredients: ["Beef patties", "Cheddar cheese", "Pickles", "Mini burger buns", "Ketchup"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-mini-sliders.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -459,7 +459,7 @@ const products = [
         },
         category: "snack",
         ingredients: ["Mushrooms", "Cream cheese", "Breadcrumbs", "Parsley", "Garlic"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-stuffed-mushroom-bites.webp",
         video: "add video later",
         vegetarian: true
     },
