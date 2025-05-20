@@ -28,7 +28,7 @@ const products = [
         category: "breakfast",
         ingredients: ["Whole-grain bread", "Avocado", "Cherry tomatoes", "Olive oil", "Salt"],
         image: "/img/freepik-avocado-toast.webp",
-        video: "add video later",
+        video: "/img/freepik__dynamic-closeup-shot-a-beautifully-plated-avocado-__89762.mp4",
         vegetarian: true
     },
     {
@@ -46,7 +46,7 @@ const products = [
         category: "breakfast",
         ingredients: ["Bacon", "Eggs", "Toast", "Butter"],
         image: "/img/freepik-bacon-and-egg-platter.webp",
-        video: "add video later",
+        video: "/img/freepik__closeup-shot-a-plate-featuring-a-sunnysideup-egg-c__89766.mp4",
         vegetarian: false
     },
     {
@@ -64,7 +64,7 @@ const products = [
         category: "breakfast",
         ingredients: ["Eggs", "Mushrooms", "Spinach", "Cheese"],
         image: "/img/freepik-vegetable-omelette.webp",
-        video: "add video later",
+        video: "/img/freepik__smooth-dolly-shot-a-beautifully-plated-omelet-fill__89765.mp4",
         vegetarian: true
     },
     {
@@ -82,7 +82,7 @@ const products = [
         category: "breakfast",
         ingredients: ["Flour", "Eggs", "Milk", "Honey", "Fresh fruits"],
         image: "/img/freepik-pancakes-with-honey.webp",
-        video: "add video later",
+        video: "/img/freepik__gentle-closeup-shot-a-tall-stack-of-fluffy-pancake__89764.mp4",
         vegetarian: true
     },
     {
@@ -100,7 +100,7 @@ const products = [
         category: "breakfast",
         ingredients: ["Yogurt", "Granola", "Seasonal fruits"],
         image: "/img/freepik-yogurt-with-granola.webp",
-        video: "add video later",
+        video: "/img/freepik__smooth-dolly-shot-a-vibrant-bowl-of-yogurt-topped-__89763.mp4",
         vegetarian: true
     },
     {
@@ -297,7 +297,7 @@ const products = [
         },
         category: "lunch",
         ingredients: ["Chicken breast", "Romaine lettuce", "Caesar dressing", "Parmesan", "Croutons"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-grilled-chicken-caesar-salad.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -315,7 +315,7 @@ const products = [
         },
         category: "lunch",
         ingredients: ["Tofu", "Bell peppers", "Broccoli", "Carrots", "Soy sauce"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-vegetable-stir-fry-with-tofu.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -333,7 +333,7 @@ const products = [
         },
         category: "lunch",
         ingredients: ["Turkey", "Bacon", "Lettuce", "Tomato", "Mayonnaise", "Bread"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-turkey-club-sandwich.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -351,7 +351,7 @@ const products = [
         },
         category: "lunch",
         ingredients: ["Bread", "Mozzarella", "Tomato", "Basil pesto"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-grilled-margherita-panini.webp",
         video: "add video later",
         vegetarian: true
     },
@@ -369,7 +369,7 @@ const products = [
         },
         category: "lunch",
         ingredients: ["Beef", "Rice", "Black beans", "Salsa", "Avocado"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
+        image: "/img/freepik-beef-burrito-bowl.webp",
         video: "add video later",
         vegetarian: false
     },
@@ -464,670 +464,454 @@ const products = [
         vegetarian: true
     },
     {
-        name: {
-            en: "Lemon Iced Tea",
-            es: "Té Helado de Limón",
-            de: "Eistee mit Zitrone"
+        "name": {
+            "en": "Lemon Iced Tea",
+            "es": "Té Helado de Limón",
+            "de": "Eistee mit Zitrone"
         },
-        price: 4,
-        description: {
-            en: "A refreshing blend of black tea with a zesty lemon twist, served chilled.",
-            es: "Una refrescante mezcla de té negro con un toque de limón, servido frío.",
-            de: "Eine erfrischende Mischung aus schwarzem Tee mit einer Zitronennote, serviert gekühlt."
+        "price": 4,
+        "description": {
+            "en": "A refreshing blend of black tea with a zesty lemon twist, served chilled.",
+            "es": "Una refrescante mezcla de té negro con un toque de limón, servido frío.",
+            "de": "Eine erfrischende Mischung aus schwarzem Tee mit einer Zitronennote, serviert gekühlt."
         },
-        category: "cold",
-        ingredients: ["Black tea", "Lemon juice", "Ice", "Sugar"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cold",
+        "ingredients": ["Black tea", "Lemon juice", "Ice", "Sugar"],
+        "image": "/img/freepik-lemon-iced-tea.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Cold Brew Coffee",
-            es: "Café Cold Brew",
-            de: "Cold Brew Kaffee"
+        "name": {
+            "en": "Cold Brew Coffee",
+            "es": "Café Cold Brew",
+            "de": "Cold Brew Kaffee"
         },
-        price: 5,
-        description: {
-            en: "Smooth and bold coffee brewed cold for an energizing experience.",
-            es: "Café suave y fuerte preparado en frío para una experiencia energizante.",
-            de: "Sanfter und kräftiger Kaffee, kalt gebrüht für ein belebendes Erlebnis."
+        "price": 5,
+        "description": {
+            "en": "Smooth and bold coffee brewed cold for an energizing experience.",
+            "es": "Café suave y fuerte preparado en frío para una experiencia energizante.",
+            "de": "Sanfter und kräftiger Kaffee, kalt gebrüht für ein belebendes Erlebnis."
         },
-        category: "cold",
-        ingredients: ["Coffee beans", "Water", "Ice"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cold",
+        "ingredients": ["Coffee beans", "Water", "Ice"],
+        "image": "/img/freepik-cold-brew-coffee.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Mint Lemonade",
-            es: "Limonada de Menta",
-            de: "Minzlimonade"
+        "name": {
+            "en": "Mint Lemonade",
+            "es": "Limonada de Menta",
+            "de": "Minzlimonade"
         },
-        price: 4,
-        description: {
-            en: "Crisp lemonade infused with fresh mint leaves for a cooling taste.",
-            es: "Refrescante limonada infusionada con hojas de menta fresca.",
-            de: "Erfrischende Limonade mit frischen Minzblättern für einen kühlenden Geschmack."
+        "price": 4,
+        "description": {
+            "en": "Crisp lemonade infused with fresh mint leaves for a cooling taste.",
+            "es": "Refrescante limonada infusionada con hojas de menta fresca.",
+            "de": "Erfrischende Limonade mit frischen Minzblättern für einen kühlenden Geschmack."
         },
-        category: "cold",
-        ingredients: ["Lemon juice", "Mint leaves", "Sugar", "Ice", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cold",
+        "ingredients": ["Lemon juice", "Mint leaves", "Sugar", "Ice", "Water"],
+        "image": "/img/freepik-mint-lemonade.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Iced Chai Latte",
-            es: "Chai Latte Helado",
-            de: "Eis-Chai-Latte"
+        "name": {
+            "en": "Iced Chai Latte",
+            "es": "Chai Latte Helado",
+            "de": "Eis-Chai-Latte"
         },
-        price: 5,
-        description: {
-            en: "Spiced chai tea mixed with milk and served over ice for a creamy treat.",
-            es: "Té chai especiado mezclado con leche y servido con hielo para un cremoso placer.",
-            de: "Gewürzter Chai-Tee mit Milch gemischt und über Eis serviert für ein cremiges Vergnügen."
+        "price": 5,
+        "description": {
+            "en": "Spiced chai tea mixed with milk and served over ice for a creamy treat.",
+            "es": "Té chai especiado mezclado con leche y servido con hielo para un cremoso placer.",
+            "de": "Gewürzter Chai-Tee mit Milch gemischt und über Eis serviert für ein cremiges Vergnügen."
         },
-        category: "cold",
-        ingredients: ["Chai tea", "Milk", "Ice", "Sugar"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cold",
+        "ingredients": ["Chai tea", "Milk", "Ice", "Sugar"],
+        "image": "/img/freepik-iced-chai-latte.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Peach Iced Tea",
-            es: "Té Helado de Melocotón",
-            de: "Pfirsich-Eistee"
+        "name": {
+            "en": "Peach Iced Tea",
+            "es": "Té Helado de Melocotón",
+            "de": "Pfirsich-Eistee"
         },
-        price: 4,
-        description: {
-            en: "Sweet and fruity iced tea infused with natural peach flavors.",
-            es: "Té helado dulce y afrutado infusionado con sabores naturales de melocotón.",
-            de: "Süßer und fruchtiger Eistee mit natürlichem Pfirsichgeschmack."
+        "price": 4,
+        "description": {
+            "en": "Sweet and fruity iced tea infused with natural peach flavors.",
+            "es": "Té helado dulce y afrutado infusionado con sabores naturales de melocotón.",
+            "de": "Süßer und fruchtiger Eistee mit natürlichem Pfirsichgeschmack."
         },
-        category: "cold",
-        ingredients: ["Black tea", "Peach syrup", "Ice", "Sugar"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cold",
+        "ingredients": ["Black tea", "Peach syrup", "Ice", "Sugar"],
+        "image": "/img/freepik-peach-iced-tea.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Espresso",
-            es: "Espresso",
-            de: "Espresso"
+        "name": {
+            "en": "Espresso",
+            "es": "Espresso",
+            "de": "Espresso"
         },
-        price: 3,
-        description: {
-            en: "A bold and rich shot of pure espresso for coffee enthusiasts.",
-            es: "Un shot intenso y rico de espresso puro para los amantes del café.",
-            de: "Ein kräftiger und reiner Espresso-Shot für Kaffeeliebhaber."
+        "price": 3,
+        "description": {
+            "en": "A bold and rich shot of pure espresso for coffee enthusiasts.",
+            "es": "Un shot intenso y rico de espresso puro para los amantes del café.",
+            "de": "Ein kräftiger und reiner Espresso-Shot für Kaffeeliebhaber."
         },
-        category: "hot",
-        ingredients: ["Coffee beans", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "hot",
+        "ingredients": ["Coffee beans", "Water"],
+        "image": "/img/freepik-espresso.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Cappuccino",
-            es: "Capuchino",
-            de: "Cappuccino"
+        "name": {
+            "en": "Cappuccino",
+            "es": "Capuchino",
+            "de": "Cappuccino"
         },
-        price: 4,
-        description: {
-            en: "A creamy delight with espresso, steamed milk, and a frothy milk topping.",
-            es: "Una delicia cremosa con espresso, leche al vapor y una capa de espuma de leche.",
-            de: "Ein cremiger Genuss mit Espresso, gedämpfter Milch und einer schaumigen Milchhaube."
+        "price": 4,
+        "description": {
+            "en": "A creamy delight with espresso, steamed milk, and a frothy milk topping.",
+            "es": "Una delicia cremosa con espresso, leche al vapor y una capa de espuma de leche.",
+            "de": "Ein cremiger Genuss mit Espresso, gedämpfter Milch und einer schaumigen Milchhaube."
         },
-        category: "hot",
-        ingredients: ["Coffee beans", "Milk"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "hot",
+        "ingredients": ["Coffee beans", "Milk"],
+        "image": "/img/freepik-cappuccino.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Green Tea",
-            es: "Té Verde",
-            de: "Grüner Tee"
+        "name": {
+            "en": "Green Tea",
+            "es": "Té Verde",
+            "de": "Grüner Tee"
         },
-        price: 3,
-        description: {
-            en: "Soothing and healthy green tea with a mild, refreshing flavor.",
-            es: "Relajante y saludable té verde con un sabor suave y refrescante.",
-            de: "Beruhigender und gesunder grüner Tee mit einem milden, erfrischenden Geschmack."
+        "price": 3,
+        "description": {
+            "en": "Soothing and healthy green tea with a mild, refreshing flavor.",
+            "es": "Relajante y saludable té verde con un sabor suave y refrescante.",
+            "de": "Beruhigender und gesunder grüner Tee mit einem milden, erfrischenden Geschmack."
         },
-        category: "hot",
-        ingredients: ["Green tea leaves", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "hot",
+        "ingredients": ["Green tea leaves", "Water"],
+        "image": "/img/freepik-green-tea.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Hot Chocolate",
-            es: "Chocolate Caliente",
-            de: "Heiße Schokolade"
+        "name": {
+            "en": "Hot Chocolate",
+            "es": "Chocolate Caliente",
+            "de": "Heiße Schokolade"
         },
-        price: 4,
-        description: {
-            en: "Rich and indulgent hot chocolate made with creamy milk and cocoa.",
-            es: "Chocolate caliente rico y cremoso hecho con leche y cacao.",
-            de: "Reichhaltige und cremige heiße Schokolade aus Milch und Kakao."
+        "price": 4,
+        "description": {
+            "en": "Rich and indulgent hot chocolate made with creamy milk and cocoa.",
+            "es": "Chocolate caliente rico y cremoso hecho con leche y cacao.",
+            "de": "Reichhaltige und cremige heiße Schokolade aus Milch und Kakao."
         },
-        category: "hot",
-        ingredients: ["Milk", "Cocoa powder", "Sugar"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "hot",
+        "ingredients": ["Milk", "Cocoa powder", "Sugar"],
+        "image": "/img/freepik-hot-chocolate.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Chamomile Tea",
-            es: "Té de Manzanilla",
-            de: "Kamillentee"
+        "name": {
+            "en": "Chamomile Tea",
+            "es": "Té de Manzanilla",
+            "de": "Kamillentee"
         },
-        price: 3,
-        description: {
-            en: "Relaxing chamomile tea perfect for unwinding after a long day.",
-            es: "Relajante té de manzanilla perfecto para relajarse después de un largo día.",
-            de: "Beruhigender Kamillentee, perfekt zum Entspannen nach einem langen Tag."
+        "price": 3,
+        "description": {
+            "en": "Relaxing chamomile tea perfect for unwinding after a long day.",
+            "es": "Relajante té de manzanilla perfecto para relajarse después de un largo día.",
+            "de": "Beruhigender Kamillentee, perfekt zum Entspannen nach einem langen Tag."
         },
-        category: "hot",
-        ingredients: ["Chamomile flowers", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "hot",
+        "ingredients": ["Chamomile flowers", "Water"],
+        "image": "/img/freepik-chamomile-tea.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Orange Juice",
-            es: "Zumo de Naranja",
-            de: "Orangensaft"
+        "name": {
+            "en": "Orange Juice",
+            "es": "Zumo de Naranja",
+            "de": "Orangensaft"
         },
-        price: 4,
-        description: {
-            en: "Freshly squeezed orange juice, packed with vitamin C.",
-            es: "Zumo de naranja recién exprimido, lleno de vitamina C.",
-            de: "Frisch gepresster Orangensaft, voller Vitamin C."
+        "price": 4,
+        "description": {
+            "en": "Freshly squeezed orange juice, packed with vitamin C.",
+            "es": "Zumo de naranja recién exprimido, lleno de vitamina C.",
+            "de": "Frisch gepresster Orangensaft, voller Vitamin C."
         },
-        category: "fresh",
-        ingredients: ["Oranges"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "fresh",
+        "ingredients": ["Oranges"],
+        "image": "/img/freepik-orange-juice.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Tropical Smoothie",
-            es: "Batido Tropical",
-            de: "Tropischer Smoothie"
+        "name": {
+            "en": "Tropical Smoothie",
+            "es": "Batido Tropical",
+            "de": "Tropischer Smoothie"
         },
-        price: 5,
-        description: {
-            en: "A creamy smoothie with mango, pineapple, and a hint of coconut.",
-            es: "Un batido cremoso con mango, piña y un toque de coco.",
-            de: "Ein cremiger Smoothie mit Mango, Ananas und einer Note Kokos."
+        "price": 5,
+        "description": {
+            "en": "A creamy smoothie with mango, pineapple, and a hint of coconut.",
+            "es": "Un batido cremoso con mango, piña y un toque de coco.",
+            "de": "Ein cremiger Smoothie mit Mango, Ananas und einer Note Kokos."
         },
-        category: "fresh",
-        ingredients: ["Mango", "Pineapple", "Coconut milk"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "fresh",
+        "ingredients": ["Mango", "Pineapple", "Coconut milk"],
+        "image": "/img/freepik-tropical-smoothie.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Strawberry Banana Shake",
-            es: "Batido de Fresa y Plátano",
-            de: "Erdbeer-Bananen-Shake"
+        "name": {
+            "en": "Strawberry Banana Shake",
+            "es": "Batido de Fresa y Plátano",
+            "de": "Erdbeer-Bananen-Shake"
         },
-        price: 5,
-        description: {
-            en: "A sweet and refreshing shake made with strawberries and bananas.",
-            es: "Un batido dulce y refrescante hecho con fresas y plátanos.",
-            de: "Ein süßer und erfrischender Shake aus Erdbeeren und Bananen."
+        "price": 5,
+        "description": {
+            "en": "A sweet and refreshing shake made with strawberries and bananas.",
+            "es": "Un batido dulce y refrescante hecho con fresas y plátanos.",
+            "de": "Ein süßer und erfrischender Shake aus Erdbeeren und Bananen."
         },
-        category: "fresh",
-        ingredients: ["Strawberries", "Banana", "Milk"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "fresh",
+        "ingredients": ["Strawberries", "Banana", "Milk"],
+        "image": "/img/freepik-strawberry-banana-shake.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Green Detox Juice",
-            es: "Jugo Verde Detox",
-            de: "Grüner Detox-Saft"
+        "name": {
+            "en": "Green Detox Juice",
+            "es": "Jugo Verde Detox",
+            "de": "Grüner Detox-Saft"
         },
-        price: 6,
-        description: {
-            en: "A revitalizing mix of kale, green apple, and cucumber.",
-            es: "Una mezcla revitalizante de kale, manzana verde y pepino.",
-            de: "Eine belebende Mischung aus Grünkohl, grünem Apfel und Gurke."
+        "price": 6,
+        "description": {
+            "en": "A revitalizing mix of kale, green apple, and cucumber.",
+            "es": "Una mezcla revitalizante de kale, manzana verde y pepino.",
+            "de": "Eine belebende Mischung aus Grünkohl, grünem Apfel und Gurke."
         },
-        category: "fresh",
-        ingredients: ["Kale", "Green apple", "Cucumber"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "fresh",
+        "ingredients": ["Kale", "Green apple", "Cucumber"],
+        "image": "/img/freepik-green-detox-juice.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Watermelon Cooler",
-            es: "Refresco de Sandía",
-            de: "Wassermelonen-Erfrischung"
+        "name": {
+            "en": "Watermelon Cooler",
+            "es": "Refresco de Sandía",
+            "de": "Wassermelonen-Erfrischung"
         },
-        price: 4,
-        description: {
-            en: "Chilled watermelon juice with a splash of lime for a refreshing drink.",
-            es: "Jugo de sandía frío con un toque de lima para una bebida refrescante.",
-            de: "Gekühlter Wassermelonensaft mit einem Spritzer Limette für ein erfrischendes Getränk."
+        "price": 4,
+        "description": {
+            "en": "Chilled watermelon juice with a splash of lime for a refreshing drink.",
+            "es": "Jugo de sandía frío con un toque de lima para una bebida refrescante.",
+            "de": "Gekühlter Wassermelonensaft mit einem Spritzer Limette für ein erfrischendes Getränk."
         },
-        category: "fresh",
-        ingredients: ["Watermelon", "Lime"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "fresh",
+        "ingredients": ["Watermelon", "Lime"],
+        "image": "/img/freepik-watermelon-cooler.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Chardonnay",
-            es: "Chardonnay",
-            de: "Chardonnay"
+        "name": {
+            "en": "Chardonnay",
+            "es": "Chardonnay",
+            "de": "Chardonnay"
         },
-        price: 8,
-        description: {
-            en: "A crisp and refreshing white wine with hints of citrus and oak.",
-            es: "Un vino blanco fresco y refrescante con toques de cítricos y roble.",
-            de: "Ein frischer und erfrischender Weißwein mit Noten von Zitrus und Eiche."
+        "price": 8,
+        "description": {
+            "en": "A crisp and refreshing white wine with hints of citrus and oak.",
+            "es": "Un vino blanco fresco y refrescante con toques de cítricos y roble.",
+            "de": "Ein frischer und erfrischender Weißwein mit Noten von Zitrus und Eiche."
         },
-        category: "alcohol",
-        ingredients: ["Grapes"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "alcohol",
+        "ingredients": ["Grapes"],
+        "image": "/img/freepik-chardonnay.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Cabernet Sauvignon",
-            es: "Cabernet Sauvignon",
-            de: "Cabernet Sauvignon"
+        "name": {
+            "en": "Cabernet Sauvignon",
+            "es": "Cabernet Sauvignon",
+            "de": "Cabernet Sauvignon"
         },
-        price: 10,
-        description: {
-            en: "A bold and rich red wine with notes of blackcurrant and vanilla.",
-            es: "Un vino tinto intenso y rico con notas de grosella negra y vainilla.",
-            de: "Ein kräftiger und reicher Rotwein mit Noten von schwarzer Johannisbeere und Vanille."
+        "price": 10,
+        "description": {
+            "en": "A bold and rich red wine with notes of blackcurrant and vanilla.",
+            "es": "Un vino tinto intenso y rico con notas de grosella negra y vainilla.",
+            "de": "Ein kräftiger und reicher Rotwein mit Noten von schwarzer Johannisbeere und Vanille."
         },
-        category: "alcohol",
-        ingredients: ["Grapes"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "alcohol",
+        "ingredients": ["Grapes"],
+        "image": "/img/freepik-cabernet-sauvignon.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Pale Ale",
-            es: "Pale Ale",
-            de: "Pale Ale"
+        "name": {
+            "en": "Pale Ale",
+            "es": "Pale Ale",
+            "de": "Pale Ale"
         },
-        price: 6,
-        description: {
-            en: "A golden craft beer with a balanced hop and malt profile.",
-            es: "Una cerveza artesanal dorada con un perfil equilibrado de lúpulo y malta.",
-            de: "Ein goldenes Craft-Bier mit einem ausgewogenen Hopfen- und Malzprofil."
+        "price": 6,
+        "description": {
+            "en": "A golden craft beer with a balanced hop and malt profile.",
+            "es": "Una cerveza artesanal dorada con un perfil equilibrado de lúpulo y malta.",
+            "de": "Ein goldenes Craft-Bier mit einem ausgewogenen Hopfen- und Malzprofil."
         },
-        category: "alcohol",
-        ingredients: ["Barley", "Hops", "Yeast", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "alcohol",
+        "ingredients": ["Barley", "Hops", "Yeast", "Water"],
+        "image": "/img/freepik-pale-ale.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Stout Beer",
-            es: "Cerveza Stout",
-            de: "Stout-Bier"
+        "name": {
+            "en": "Stout Beer",
+            "es": "Cerveza Stout",
+            "de": "Stout-Bier"
         },
-        price: 7,
-        description: {
-            en: "A dark and creamy beer with rich flavors of coffee and chocolate.",
-            es: "Una cerveza oscura y cremosa con ricos sabores a café y chocolate.",
-            de: "Ein dunkles und cremiges Bier mit reichen Aromen von Kaffee und Schokolade."
+        "price": 7,
+        "description": {
+            "en": "A dark and creamy beer with rich flavors of coffee and chocolate.",
+            "es": "Una cerveza oscura y cremosa con ricos sabores a café y chocolate.",
+            "de": "Ein dunkles und cremiges Bier mit reichen Aromen von Kaffee und Schokolade."
         },
-        category: "alcohol",
-        ingredients: ["Barley", "Hops", "Yeast", "Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "alcohol",
+        "ingredients": ["Barley", "Hops", "Yeast", "Water"],
+        "image": "/img/freepik-stout-beer.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Rosé Wine",
-            es: "Vino Rosado",
-            de: "Roséwein"
+        "name": {
+            "en": "Rosé Wine",
+            "es": "Vino Rosado",
+            "de": "Roséwein"
         },
-        price: 9,
-        description: {
-            en: "A delicate and aromatic rosé with notes of strawberry and peach.",
-            es: "Un rosado delicado y aromático con notas de fresa y melocotón.",
-            de: "Ein zarter und aromatischer Rosé mit Noten von Erdbeere und Pfirsich."
+        "price": 9,
+        "description": {
+            "en": "A delicate and aromatic rosé with notes of strawberry and peach.",
+            "es": "Un rosado delicado y aromático con notas de fresa y melocotón.",
+            "de": "Ein zarter und aromatischer Rosé mit Noten von Erdbeere und Pfirsich."
         },
-        category: "alcohol",
-        ingredients: ["Grapes"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "alcohol",
+        "ingredients": ["Grapes"],
+        "image": "/img/freepik-rose-wine.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Mojito",
-            es: "Mojito",
-            de: "Mojito"
+        "name": {
+            "en": "Mojito",
+            "es": "Mojito",
+            "de": "Mojito"
         },
-        price: 9,
-        description: {
-            en: "A refreshing blend of white rum, fresh mint leaves, lime juice, sugar, and sparkling water.",
-            es: "Una refrescante mezcla de ron blanco, hojas de menta fresca, jugo de limón, azúcar y agua con gas.",
-            de: "Eine erfrischende Mischung aus weißem Rum, frischen Minzblättern, Limettensaft, Zucker und Sprudelwasser."
+        "price": 9,
+        "description": {
+            "en": "A refreshing blend of white rum, fresh mint leaves, lime juice, sugar, and sparkling water.",
+            "es": "Una refrescante mezcla de ron blanco, hojas de menta fresca, jugo de limón, azúcar y agua con gas.",
+            "de": "Eine erfrischende Mischung aus weißem Rum, frischen Minzblättern, Limettensaft, Zucker und Sprudelwasser."
         },
-        category: "cocktail",
-        ingredients: ["White Rum", "Mint Leaves", "Lime Juice", "Sugar", "Sparkling Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cocktail",
+        "ingredients": ["White Rum", "Mint Leaves", "Lime Juice", "Sugar", "Sparkling Water"],
+        "image": "/img/freepik-mojito.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Margarita",
-            es: "Margarita",
-            de: "Margarita"
+        "name": {
+            "en": "Margarita",
+            "es": "Margarita",
+            "de": "Margarita"
         },
-        price: 10,
-        description: {
-            en: "A classic cocktail made with tequila, lime juice, and triple sec, served with a salted rim.",
-            es: "Un cóctel clásico hecho con tequila, jugo de limón y triple sec, servido con un borde de sal.",
-            de: "Ein klassischer Cocktail aus Tequila, Limettensaft und Triple Sec, serviert mit einem Salzrand."
+        "price": 10,
+        "description": {
+            "en": "A classic cocktail made with tequila, lime juice, and triple sec, served with a salted rim.",
+            "es": "Un cóctel clásico hecho con tequila, jugo de limón y triple sec, servido con un borde de sal.",
+            "de": "Ein klassischer Cocktail aus Tequila, Limettensaft und Triple Sec, serviert mit einem Salzrand."
         },
-        category: "cocktail",
-        ingredients: ["Tequila", "Lime Juice", "Triple Sec", "Salt"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cocktail",
+        "ingredients": ["Tequila", "Lime Juice", "Triple Sec", "Salt"],
+        "image": "/img/freepik-margarita.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Old Fashioned",
-            es: "Old Fashioned",
-            de: "Old Fashioned"
+        "name": {
+            "en": "Old Fashioned",
+            "es": "Old Fashioned",
+            "de": "Old Fashioned"
         },
-        price: 12,
-        description: {
-            en: "A timeless mix of bourbon, sugar, bitters, and a twist of orange peel.",
-            es: "Una mezcla atemporal de bourbon, azúcar, amargos y una cáscara de naranja.",
-            de: "Eine zeitlose Mischung aus Bourbon, Zucker, Bitter und einer Orangenschale."
+        "price": 12,
+        "description": {
+            "en": "A timeless mix of bourbon, sugar, bitters, and a twist of orange peel.",
+            "es": "Una mezcla atemporal de bourbon, azúcar, amargos y una cáscara de naranja.",
+            "de": "Eine zeitlose Mischung aus Bourbon, Zucker, Bitter und einer Orangenschale."
         },
-        category: "cocktail",
-        ingredients: ["Bourbon", "Sugar", "Bitters", "Orange Peel"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cocktail",
+        "ingredients": ["Bourbon", "Sugar", "Bitters", "Orange Peel"],
+        "image": "/img/freepik-old-fashioned.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Piña Colada",
-            es: "Piña Colada",
-            de: "Piña Colada"
+        "name": {
+            "en": "Piña Colada",
+            "es": "Piña Colada",
+            "de": "Piña Colada"
         },
-        price: 11,
-        description: {
-            en: "A tropical blend of rum, coconut cream, and pineapple juice, served chilled.",
-            es: "Una mezcla tropical de ron, crema de coco y jugo de piña, servida fría.",
-            de: "Eine tropische Mischung aus Rum, Kokoscreme und Ananassaft, serviert gekühlt."
+        "price": 11,
+        "description": {
+            "en": "A tropical blend of rum, coconut cream, and pineapple juice, served chilled.",
+            "es": "Una mezcla tropical de ron, crema de coco y jugo de piña, servida fría.",
+            "de": "Eine tropische Mischung aus Rum, Kokoscreme und Ananassaft, serviert gekühlt."
         },
-        category: "cocktail",
-        ingredients: ["Rum", "Coconut Cream", "Pineapple Juice"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cocktail",
+        "ingredients": ["Rum", "Coconut Cream", "Pineapple Juice"],
+        "image": "/img/freepik-pina-colada.webp",
+        "video": "add video later",
+        "vegetarian": true
     },
     {
-        name: {
-            en: "Espresso Martini",
-            es: "Martini de Espresso",
-            de: "Espresso Martini"
+        "name": {
+            "en": "Espresso Martini",
+            "es": "Martini de Espresso",
+            "de": "Espresso Martini"
         },
-        price: 13,
-        description: {
-            en: "A modern favorite combining vodka, espresso, coffee liqueur, and a touch of sugar.",
-            es: "Un favorito moderno que combina vodka, espresso, licor de café y un toque de azúcar.",
-            de: "Ein moderner Favorit, der Wodka, Espresso, Kaffeelikör und eine Prise Zucker kombiniert."
+        "price": 13,
+        "description": {
+            "en": "A modern favorite combining vodka, espresso, coffee liqueur, and a touch of sugar.",
+            "es": "Un favorito moderno que combina vodka, espresso, licor de café y un toque de azúcar.",
+            "de": "Ein moderner Favorit, der Wodka, Espresso, Kaffeelikör und eine Prise Zucker kombiniert."
         },
-        category: "cocktail",
-        ingredients: ["Vodka", "Espresso", "Coffee Liqueur", "Sugar"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Margherita Pizza",
-            es: "Pizza Margarita",
-            de: "Margherita-Pizza"
-        },
-        price: 10,
-        description: {
-            en: "Classic Italian pizza with simple and fresh ingredients.",
-            es: "Pizza italiana clásica con ingredientes simples y frescos.",
-            de: "Klassische italienische Pizza mit einfachen und frischen Zutaten."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Basil"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Pepperoni Pizza",
-            es: "Pizza de Pepperoni",
-            de: "Pepperoni-Pizza"
-        },
-        price: 12,
-        description: {
-            en: "A delicious pizza topped with pepperoni and cheese.",
-            es: "Una deliciosa pizza cubierta con pepperoni y queso.",
-            de: "Eine leckere Pizza mit Pepperoni und Käse."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Pepperoni"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: false
-    },
-    {
-        name: {
-            en: "Quattro Formaggi Pizza",
-            es: "Pizza Quattro Formaggi",
-            de: "Quattro Formaggi Pizza"
-        },
-        price: 13,
-        description: {
-            en: "A rich and cheesy pizza made with four types of cheese.",
-            es: "Una pizza rica y quesosa hecha con cuatro tipos de queso.",
-            de: "Eine reichhaltige und käsige Pizza mit vier Käsesorten."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Parmesan", "Gorgonzola", "Fontina"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Diavola Pizza",
-            es: "Pizza Diavola",
-            de: "Diavola Pizza"
-        },
-        price: 14,
-        description: {
-            en: "Spicy pizza topped with salami for an extra kick.",
-            es: "Pizza picante cubierta con salami para un toque extra.",
-            de: "Scharfe Pizza mit Salami für einen extra Kick."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Spicy salami"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: false
-    },
-    {
-        name: {
-            en: "Capricciosa Pizza",
-            es: "Pizza Capricciosa",
-            de: "Capricciosa Pizza"
-        },
-        price: 13,
-        description: {
-            en: "Loaded with ham, mushrooms, and artichokes.",
-            es: "Cargada con jamón, champiñones y alcachofas.",
-            de: "Beladen mit Schinken, Pilzen und Artischocken."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Ham", "Mushrooms", "Artichokes", "Olives"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: false
-    },
-    {
-        name: {
-            en: "Vegetarian Pizza",
-            es: "Pizza Vegetariana",
-            de: "Vegetarische Pizza"
-        },
-        price: 9,
-        description: {
-            en: "A fresh and healthy vegetarian pizza with mixed vegetables.",
-            es: "Una pizza vegetariana fresca y saludable con verduras mixtas.",
-            de: "Eine frische und gesunde vegetarische Pizza mit gemischtem Gemüse."
-        },
-        category: "Pizzas",
-        ingredients: ["Flour", "Tomato", "Mozzarella", "Mixed vegetables"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Sparkling Water",
-            es: "Agua con Gas",
-            de: "Sprudelwasser"
-        },
-        price: 3,
-        description: {
-            en: "Refreshing sparkling water to quench your thirst.",
-            es: "Refrescante agua con gas para saciar tu sed.",
-            de: "Erfrischendes Sprudelwasser, um den Durst zu löschen."
-        },
-        category: "Beverages",
-        ingredients: ["Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Coca-Cola",
-            es: "Coca-Cola",
-            de: "Coca-Cola"
-        },
-        price: 2,
-        description: {
-            en: "Classic Coca-Cola with a sweet and fizzy taste.",
-            es: "Coca-Cola clásica con un sabor dulce y burbujeante.",
-            de: "Klassische Coca-Cola mit einem süßen und sprudelnden Geschmack."
-        },
-        category: "Beverages",
-        ingredients: ["Water", "Sugar", "Caffeine"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Orange Fanta",
-            es: "Fanta Naranja",
-            de: "Orange Fanta"
-        },
-        price: 2,
-        description: {
-            en: "Fruity and refreshing orange-flavored soft drink.",
-            es: "Refrescante bebida gaseosa con sabor a naranja.",
-            de: "Fruchtiges und erfrischendes Orangenlimonade."
-        },
-        category: "Beverages",
-        ingredients: ["Water", "Sugar", "Orange flavor"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Sprite",
-            es: "Sprite",
-            de: "Sprite"
-        },
-        price: 2,
-        description: {
-            en: "Lemon-lime soda with a crisp, clean taste.",
-            es: "Refresco de limón y lima con un sabor crujiente y limpio.",
-            de: "Zitronenlimonade mit einem knackigen und klaren Geschmack."
-        },
-        category: "Beverages",
-        ingredients: ["Water", "Sugar", "Lemon flavor"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Iced Tea",
-            es: "Té Helado",
-            de: "Eistee"
-        },
-        price: 3,
-        description: {
-            en: "Iced tea with a touch of lemon for a refreshing drink.",
-            es: "Té helado con un toque de limón para una bebida refrescante.",
-            de: "Eistee mit einem Hauch von Zitrone für ein erfrischendes Getränk."
-        },
-        category: "Beverages",
-        ingredients: ["Tea", "Sugar", "Lemon"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
-    },
-    {
-        name: {
-            en: "Still Water",
-            es: "Agua sin Gas",
-            de: "Stilles Wasser"
-        },
-        price: 2,
-        description: {
-            en: "Pure, non-sparkling water for hydration.",
-            es: "Agua pura sin gas para hidratarse.",
-            de: "Reines, nicht sprudelndes Wasser zur Hydratation."
-        },
-        category: "Beverages",
-        ingredients: ["Water"],
-        image: "/img/freepik__candid-image-photography-natural-textures-highly-r__85082.jpeg",
-        video: "add video later",
-        vegetarian: true
+        "category": "cocktail",
+        "ingredients": ["Vodka", "Espresso", "Coffee Liqueur", "Sugar"],
+        "image": "/img/freepik-espresso-martini.webp",
+        "video": "add video later",
+        "vegetarian": true
     }
 ];
 
